@@ -25,5 +25,4 @@ while(1):
     if radio.available():    
         len = radio.getDynamicPayloadSize()
         receive_payload = radio.read(len)
-        #print('Got payload size={} value="{}"'.format(len, receive_payload.decode('utf-8')))
         print(receive_payload)
